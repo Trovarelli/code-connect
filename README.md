@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto Next.js - Estudo de Server Side Rendering e CSS Modules
 
-## Getting Started
+Este é um projeto simples desenvolvido com [Next.js](https://nextjs.org), criado com o auxílio do [\`create-next-app\`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-First, run the development server:
+O objetivo principal foi estudar o uso adequado de **Server Side Rendering (SSR)** com Next.js e entender melhor a organização de estilos utilizando **CSS Modules**, permitindo encapsulamento e reaproveitamento mais seguro de estilos em componentes.
 
-```bash
+## 🚀 Como rodar o projeto
+
+### 1. Instalando dependências
+
+Antes de tudo, certifique-se de instalar as dependências do projeto:
+
+\`\`\`bash
+npm install
+\`\`\`
+
+### 2. Iniciando o servidor de desenvolvimento do Next.js
+
+Para rodar o projeto localmente com o Next.js:
+
+\`\`\`bash
 npm run dev
-# or
+
+# ou
+
 yarn dev
-# or
+
+# ou
+
 pnpm dev
-# or
+
+# ou
+
 bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Você pode começar a editar a página principal modificando o arquivo \`app/page.tsx\`. As alterações serão refletidas automaticamente.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Rodando com json-server (mock API)
 
-## Learn More
+Este projeto também utiliza um mock de API para simular dados durante o desenvolvimento, utilizando o [\`json-server\`](https://github.com/typicode/json-server).
 
-To learn more about Next.js, take a look at the following resources:
+Para iniciar o \`json-server\` com os dados mockados:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+\`\`\`bash
+json-server posts.mock.json -p 3042
+\`\`\`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A API estará acessível em: [http://localhost:3042/posts](http://localhost:3042/posts)
 
-## Deploy on Vercel
+## 📚 Recursos e aprendizado
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Durante o desenvolvimento, foram abordados os seguintes conceitos:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Utilização de **Server Side Rendering** no Next.js (\`getServerSideProps\`, rotas dinâmicas, etc.)
+- Estilização de componentes utilizando **CSS Modules**
+- Integração com API simulada usando o \`json-server\`
+
+## 📘 Links úteis
+
+- [Documentação oficial do Next.js](https://nextjs.org/docs)
+- [Tutorial interativo do Next.js](https://nextjs.org/learn)
+- [Repositório no GitHub do Next.js](https://github.com/vercel/next.js)
+
+## ☁️ Deploy
+
+A forma mais fácil de realizar o deploy de aplicações Next.js é usando a plataforma [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), criada pelos próprios desenvolvedores do framework.
+
+Consulte a [documentação de deploy](https://nextjs.org/docs/app/building-your-application/deploying) para mais detalhes.
+
+---
+
+Desenvolvido com 💻 por fins de estudo e aprendizado.
